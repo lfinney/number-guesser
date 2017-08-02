@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>
+    Number Guesser
+  </title>
+  <link rel="stylesheet"
+        href="ng-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700"
+        rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1><span id="titleBold">Number</span> <span id="titleLight">Guesser</span></h1>
+  </header>
+
+  <section>
+  <form action="">
+    <div class="min-max-inputs">
+      <h2 id="range-set">Set a range to guess a random number from</h2>
+      <label for="min-box">
+        Min <input type="number" placeholder="1" class="enterGuess" aria-live="assertive" id="min-box" />
+      </label>
+
+      <label for="max-box">
+        <input type="number" placeholder="100" class="enterGuess" aria-live="assertive" id="max-box" /> Max
+      </label>
+    </div>
+    <p>
+      <label for="submit-min-max">
+        <button type="submit" class="clickableButton" id="submit-min-max" aria-controls="number range" value="Submit min and max range">Set Range</button>
+      </label>
+    </p>
+
+    <p>
+      <label for="enter-guess">
+        <input type="text" placeholder="Enter your guess" class="enterGuess" aria-live="assertive" id="guess" />
+      </label>
+    </p>
+
+    <p>
+      <!-- <label for="guess"> -->
+        <button type="submit" class="clickableButton" id="guess-button" value="Guess" role="button" aria-controls="submit guess">Guess</button>
+      <!-- </label> -->
+
+      <label for="clear">
+        <button type="button" class="clickableButton" id="clear-button"  value="Clear" role="button" aria-controls="clear guess field" disabled="true" >Clear</button>
+      </label>
+    </p>
+
+    <h2 id="user-prompt">Do you wanna play a game?</h2>
+
+    <p id="last-guess">--</p>
+
+    <h2 id="user-feedback">Pick a number between 1 and 100.</h2>
+
+    <p>
+      <label for="nextLevel">
+        <button type="button" class="clickableButton" id="next-level-button"  value="Next-Level" role="button" aria-controls="next level" disabled="true">Next Level</button>
+      </label>
+
+      <label for="reset">
+        <button type="reset" class="clickableButton clickableButtonWider" id="reset-button" role="button" aria-controls="reset game" value="Reset">Reset</button>
+
+      </label>
+    </p>
+  </form>
+
+<script src="ng-scripts-2.js"></script>
+  </section>
+</body>
+</html>
